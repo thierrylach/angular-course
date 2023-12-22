@@ -40,7 +40,7 @@ export const COURSES: any = [
         description: 'Angular Security Course',
         longDescription: "Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.",
         iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
-        category: 'ADVANCED',
+        category: 'UNKNOWN',
         lessonsCount: 11
     },
     {
