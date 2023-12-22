@@ -7,17 +7,19 @@
 
 <div class="courses">
 
-    @for (course of courses; track course.id;
-                 let index = $index;
+    <!-- Track needs a primary key -->
+    <!-- track course.id or track trackCourse() -->
+    @for (course of courses; track trackCourse;
                  let count = $count;
                  let even = $even;
                  let odd = $odd) {
                     <!-- Do not need to use 'let' on these 
+                        let index = $index;
                         let first = $first;
                         let last = $last;
                     -->
            <course-card (courseSelected)="onCourseSelected($event)"
-                    [index]="index + 1"
+                    [index]="$index + 1"
                     [count]="count" 
                     [class.is-first]="$first"
                     [class.is-last]="$last"

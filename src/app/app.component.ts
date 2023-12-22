@@ -20,4 +20,8 @@ export class AppComponent {
   }
 
 
+  trackCourse(index: number, course: Course) {
+    return course.id;
+  }
+
 }
