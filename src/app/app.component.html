@@ -5,6 +5,38 @@
 
 </div>
 
+<div class="demo">
+        <!--
+            BUILT-IN PIPES
+            
+            date: 'MM/dd/yy'
+            date: 'MM/dd/yyyy'
+
+            pipes:
+
+            string
+                uppercase
+                lowercase
+                titlecase
+
+            numeric
+                number: '3' -- 3 digits left
+                number: '3.3-5' 3 left, 3 to 5 right
+                currency -- defaults to USD
+                currency: 'GBP'
+                percent
+
+            array
+                slice:0:4 - first through fourth (second parameter not included)
+
+            json
+
+            keyvalue -- creates an array of key values of the properties
+        -->
+
+        <div>{{startDate | date: 'MMM/dd/yyyy'}}</div>
+</div>
+
 <div class="courses">
 
     <!-- Track needs a primary key -->
