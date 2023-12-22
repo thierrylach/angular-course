@@ -35,4 +35,16 @@ export class CourseCardComponent implements OnInit {
     this.courseEmitter.emit(this.course);
   }
 
+  cardClasses() {
+    return {
+      'beginner': this.course.category == 'BEGINNER',
+      'intermediate': this.course.category == 'INTERMEDIATE',
+      'advanced': this.course.category == 'ADVANCED'
+    }
+  }
+
+  cardStyles() {
+    return {'text-decoration': 'underline'};
+  }
+
 }

@@ -1,6 +1,8 @@
-<div class="course-card">
-
-    <div class="course-title">
+<div class="course-card"
+    [ngClass]="cardClasses()">
+ 
+    <div class="course-title"
+        [ngStyle]="cardStyles()">
         {{index}} of {{count}} - {{course.description}}
     </div>
     @if (course.id == 3) {
